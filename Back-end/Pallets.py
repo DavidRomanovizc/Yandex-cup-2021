@@ -5,12 +5,7 @@ with open("input_B_2.txt") as input_file:
     out_delivery_count = int(input_file.readline())
     out_pozition = input_file.readline().split()
 
-# posilki = { delivery_id[0]:{
-#     "bag": False, # можно ли отправлять
-#     "palete":False, # есть ли палета в поставке
-#     "ids": [] # коробки
-#     }
-# }
+
 posilki = {}
 for i in range(count_all):
     # Если поставка ещё не обработана
@@ -27,14 +22,11 @@ for i in range(count_all):
         posilki[delivery_id[i]]["bag"] = False
         if parent_id[i] in posilki:
             posilki[parent_id[i]]["bag"] = False
-#     print(f"i={i} : parent_id[{i}]={parent_id[i]} : delivery_id[{i}]={delivery_id[i]}")
-# print(posilki)
 
 if out_delivery_count != 0:
     for out_poz in range(out_delivery_count):
         if out_poz in delivery_id:
             posilki[delivery_id[out_pozition[i]]]["bag"] = False
-# print(posilki)
 
 ans = []
 for i in posilki:
