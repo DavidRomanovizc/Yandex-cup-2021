@@ -22,3 +22,7 @@
 ### Задача: C.Шашки
 ![image](https://user-images.githubusercontent.com/72649244/135732702-78e8d7a8-056d-4704-88bc-06badd9a4517.png)
 всего 153 теста
+
+
+# Результат по Back-end направлению
+![image](https://user-images.githubusercontent.com/72649244/135732792-1a94b101-9d18-4352-b18c-50ef15a1d5cf.png)
